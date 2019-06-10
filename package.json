@@ -2,14 +2,17 @@
   "name": "my-project-name",
   "version": "0.1.0",
   "description": "My project description",
-  "main": "index.js",
+  "main": "src/index.js",
+  "files": [
+    "./src"
+  ],
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage --colors",
     "doc": "jsdoc -c jsdoc.conf.json",
-    "build:watch": "webpack -w --mode development",
-    "build:prod": "webpack --mode production"
+    "build:watch": "standard \"src/**/*.js\" \"test/**/*.js\" && webpack -w --mode development",
+    "build:prod": "standard \"src/**/*.js\" \"test/**/*.js\" && webpack --mode production"
   },
   "keywords": [
     "node",
@@ -30,7 +33,9 @@
     "docdash": "^1.1.1",
     "jest": "^24.8.0",
     "jsdoc": "^3.6.2",
+    "standard": "^12.0.1",
     "webpack": "^4.33.0",
     "webpack-cli": "^3.3.3"
-  }
+  },
+  "dependencies": {}
 }
