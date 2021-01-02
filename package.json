@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/maxsalles/node-app-template.git"
+    "url": "https://github.com/maxsalles/js-package-template.git"
   },
   "keywords": [
     "node",
