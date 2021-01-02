@@ -1,14 +1,9 @@
 const path = require('path')
 
-const library = {
-  name: 'myLibraryName',
-  version: '0.1.0'
-}
+const library = { name: 'myLibraryName' }
 
-module.exports = (_, { mode }) => {
-  const filename = (
-    `${library.name}-${library.version}${ mode === 'production' ? '.min' : '' }.js`
-  )
+module.exports = () => {
+  const filename = `${library.name}.min.js`
 
   return {
     entry: './src/index.js',
