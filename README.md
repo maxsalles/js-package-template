@@ -1,4 +1,4 @@
-# MX Mixins
+# My Project Name
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![License](https://img.shields.io/github/license/maxsalles/js-package-template.svg)](LICENSE)
