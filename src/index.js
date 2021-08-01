@@ -1,3 +1,1 @@
-import hello from './hello'
-
-console.log(hello())
+export { default as hello } from './hello'
